@@ -1,0 +1,30 @@
+.main {
+    height: 100vh;
+}
+
+.hallodoc-img {
+    width: 200px;
+    height: 100px;
+}
+
+.light {
+    width: 30px;
+    height: 30px;
+}
+
+.terms {
+    background-color: #f8f8f9;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width:450px) {
+    .hallodoc-img {
+        display: none;
+    }
+
+    .light{
+        position: fixed;
+        right: 5%;
+        top: 2%;
+    }
+}
