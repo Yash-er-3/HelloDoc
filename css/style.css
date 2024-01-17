@@ -12,12 +12,22 @@
     height: 30px;
 }
 
+.under{
+    margin-top: 100%;
+}
+
 .terms {
     background-color: #f8f8f9;
     margin-bottom: 5%;
 }
 
 @media screen and (max-width:450px) {
+
+    .main{
+        justify-content: space-between;
+
+    }
+   
     .hallodoc-img {
         display: none;
     }
@@ -26,5 +36,13 @@
         position: fixed;
         right: 5%;
         top: 2%;
+    }
+
+    .btn{
+        padding: 10px 0px;
+    }
+
+    a{
+        padding: 0px 20px;
     }
 }
