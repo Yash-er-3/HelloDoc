@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(247, 247, 247);
+}
+
+.light-mode {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+}
+.hallodoc {
+    width: 200px;
+    height: 75px;
+    padding-left: 30px;
+}
+
+.back-btn {
+    padding: 10px;
+    border: 1px solid #00b8e6;
+    border-radius: 5px;
+}
+
+.back {
+    width: 20px;
+    height: 18px;
+}
+
+.upload{
+    background-color: #00b8e6;
+  color: #ebebeb; 
+}
+
+.choosenfile{
+    color: white;
+}
+
+/* customizing form floating */
+
+.form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label{
+    color: #00b8e6;
+}
+
+.form-floating>.form-control-plaintext~label::after, .form-floating>.form-control:focus~label::after, .form-floating>.form-control:not(:placeholder-shown)~label::after, .form-floating>.form-select~label::after{
+    background-color: transparent;
+}
+
+.form-control:focus{
+    border: 1px solid #00b8e6;
+}
+
+.uploadbtn {
+    background-color: #00b8e6;
+    color: white;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.uploadbtndiv {
+    background-color: #ebebeb;
+}
+
+.can{
+    border: 1px solid #00b8e6;
+    color: #00b8e6;
+}
+
+.sub{
+    background-color: #00b8e6;
+}
+
+/* .form-control{
+    border: 1px solid;
+} */
+/* end  */
+/* 
+.form-floating>label {
+    padding: 0.5rem 0.75rem;
+} */
+
+
+
+@media screen and (max-width:425px) {
+
+    .form-floating>label {
+        font-size: small;
+        
+    }
+
+    .hallodoc{
+        padding-left: 10px;
+        width: 150px;
+    }
+
+    .footer{
+        font-size: 0.7rem;
+    }
+
+    .back-btn {
+        right: 10%;
+    }
+}

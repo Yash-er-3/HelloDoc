@@ -10,41 +10,55 @@
     
 </head>
 
-<body class="d-flex flex-column justify-content-center align-items-center">
+<body>
 
-    <div>
+    <div class="d-flex content flex-column justify-content-center align-items-center z-5">
+        
         <div class="d-flex justify-content-around">
             <div class="ms-5">
                 <img class="hallodoc-img" src="./images/hallodoc.png" alt="">
             </div>
 
-            <div>
-                <img class="light" src="./images/light.png" alt="">
+            <div id="img-btn">
+                <img class="light"  role="button" src="./images/light.png" alt="" id="img-mode">
             </div>
         </div>
 
+        
+        
         <div class="main">
-            <a href="./index.html" class="d-flex text-decoration-none align-items-center border border-0 bg-white">
+            
+            <div>
+                <img class="bg" src="./images/back-1.png" alt="">
+            </div>
+           
+           
+            <a href="./index.html" class="d-flex text-decoration-none align-items-center border border-0 bg-transparent">
                 <div class="d-flex">
                     <img class="back" src="./images/back.png" alt="">
                 </div>
-                <span style="color: #00b8e6;" class="back-txt">Back</span>
+                <span style="color: #00b8e6;" class="back-txt small">Back</span>
             </a>
+
     
             <form action="">
-    
+
+               
+                
                 <h2 class="text-center mt-2">
                     Login To Your Account
                 </h2>
     
                 <div class="form-floating">
-                        <input type="email" class="form-control shadow-none mt-5" 
+                        <input type="email" class="form-control shadow-none mt-5 bg-transparent" 
                         placeholder="Email">
                         <label class="FloatingInput" for="Name">Email</label>
                 </div>
+
+               
     
                 <div class="form-floating">
-                        <input type="password" class="form-control shadow-none mt-3" 
+                        <input type="password" class="form-control shadow-none mt-3 bg-transparent" 
                         placeholder="Password">
                         <label class="FloatingInput" for="Name">Password</label>
                 </div>
@@ -57,16 +71,17 @@
                         </a>
                     </div>
     
-                    <div class="d-flex justify-content-center mt-2">
+                    <div class="d-flex justify-content-center mt-2 small">
                         <a href="./forgotpassword.html" class="mt-2 text-decoration-none" style="color: #00b8e6;">Forgot Password?</a>
     
                     </div>
                 </div>
+                
         </div>
 
         
 
-            <div class="d-flex flex-row terms text-secondary fw-medium small p-3 position-absolute">
+            <div class="d-flex flex-row fw-medium small position-absolute" id="terms" >
                 <span>Terms of Conditions &nbsp;</span><span>|</span><span>&nbsp;&nbsp;Privacy Policy</span>
             </div>
         </form>

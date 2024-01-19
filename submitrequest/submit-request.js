@@ -1,6 +1,5 @@
 const modebtn = document.getElementById('img-btn')
 const imgbtn = document.getElementById('img-mode')
-const terms = document.getElementById('terms')
 
 modebtn.addEventListener('click', darkLight)
 
@@ -12,22 +11,30 @@ window.onload = function () {
     flag = parseInt(array[1]);
     darkLight ()
     // console.log(flag)
+    try {
+        const myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+     
+            myModal.show();
+        
+        const closeBtn = document.getElementById("closeBtn");
+        closeBtn.addEventListener('click', function () { myModal.hide(); })
+    } catch (error) {
+        
+    }
 }
 
 
 function darkLight () {
     if (flag == 0) {
-        document.querySelector('body').setAttribute('data-bs-theme', 'dark')
+        document.querySelector('body').style.backgroundColor = "black"
         imgbtn.toString().replace('light', 'dark')
-        terms.style.backgroundColor = "transparent"
-        terms.style.color = "white"
         document.cookie = "flag = " + flag;
         flag = 1;
     }
     else {
+        document.querySelector('body').style.backgroundColor = "rgb(247,247,247)"
         document.querySelector('body').setAttribute('data-bs-theme', 'light')
         imgbtn.toString().replace('dark', 'light')
-        terms.style.color = "#bababa"
         document.cookie = "flag = " + flag
         flag = 0;
     }
