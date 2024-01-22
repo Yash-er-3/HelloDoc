@@ -14,11 +14,11 @@ window.onload = function () {
     // console.log(flag)
 }
 
-
 function darkLight () {
     if (flag == 0) {
         document.querySelector('body').setAttribute('data-bs-theme', 'dark')
         imgbtn.toString().replace('light', 'dark')
+        imgbtn.src = "../images/light.png"
         terms.style.backgroundColor = "transparent"
         terms.style.color = "white"
         document.cookie = "flag = " + flag;
@@ -27,6 +27,8 @@ function darkLight () {
     else {
         document.querySelector('body').setAttribute('data-bs-theme', 'light')
         imgbtn.toString().replace('dark', 'light')
+        imgbtn.src = "../images/dark.png"
+
         terms.style.color = "#bababa"
         document.cookie = "flag = " + flag
         flag = 0;
