@@ -1,4 +1,4 @@
-body{
+body {
     background-color: rgb(247, 247, 247);
 }
 
@@ -7,6 +7,7 @@ body{
     width: 40px;
     height: 40px;
 }
+
 .hallodoc {
     width: 200px;
     height: 75px;
@@ -14,7 +15,7 @@ body{
 }
 
 .back-btn {
-    padding: 10px;
+    padding: 6px;
     border: 1px solid #00b8e6;
     border-radius: 5px;
 }
@@ -24,21 +25,26 @@ body{
     height: 18px;
 }
 
-.upload{
+.upload {
     background-color: #00b8e6;
-  color: #ebebeb; 
+    color: #ebebeb;
 }
+
 .form-floating>.form-control,
-.form-floating>.form-control-plaintext{
+.form-floating>.form-control-plaintext {
     color: inherit;
 }
-.choosenfile{
+
+.choosenfile {
     color: white;
 }
 
 /* customizing form floating */
 
-.form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label{
+.form-floating>.form-control-plaintext~label,
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label {
     color: #00b8e6;
 }
 
@@ -49,11 +55,14 @@ body{
     color: inherit;
 }
 
-.form-floating>.form-control-plaintext~label::after, .form-floating>.form-control:focus~label::after, .form-floating>.form-control:not(:placeholder-shown)~label::after, .form-floating>.form-select~label::after{
+.form-floating>.form-control-plaintext~label::after,
+.form-floating>.form-control:focus~label::after,
+.form-floating>.form-control:not(:placeholder-shown)~label::after,
+.form-floating>.form-select~label::after {
     background-color: transparent;
 }
 
-.form-control:focus{
+.form-control:focus {
     border: 1px solid #00b8e6;
 }
 
@@ -68,12 +77,12 @@ body{
     background-color: #ebebeb;
 }
 
-.can{
+.can {
     border: 1px solid #00b8e6;
     color: #00b8e6;
 }
 
-.sub{
+.sub {
     background-color: #00b8e6;
 }
 
@@ -98,27 +107,27 @@ body{
     border-bottom-right-radius: 0;
 }
 
-.telephone{
+.telephone {
     border: 1px solid #dee2e6;
-        padding: 10px 16px;
+    padding: 10px 16px;
 }
 
-.telephone:focus-within{
+.telephone:focus-within {
     border-color: #00b8e6;
 }
 
-#tel:focus{
+#tel:focus {
     box-shadow: none;
     border: 0;
     background-color: transparent;
 }
 
-#iti-0__country-listbox{
+#iti-0__country-listbox {
     z-index: 3;
 }
 
 .iti__flag-box,
-.iti__country-name{
+.iti__country-name {
     color: black;
 }
 
@@ -127,7 +136,7 @@ body{
 .iti--allow-dropdown input[type=tel],
 .iti--separate-dial-code input,
 .iti--separate-dial-code input[type=text],
-.iti--separate-dial-code input[type=tel]{
+.iti--separate-dial-code input[type=tel] {
     color: inherit;
 }
 
@@ -137,6 +146,18 @@ body{
     border: 0;
     background-color: transparent;
     font-size: 1em;
+}
+
+#content-color{
+    background-color: white;
+}
+
+.date-iconLight {
+    color-scheme: light;
+}
+
+.date-iconDark{
+    color-scheme: dark;
 }
 
 /* .form-control{
@@ -152,22 +173,23 @@ body{
 
     .form-floating>label {
         font-size: small;
-        
+
     }
 
-    .hallodoc{
+    .hallodoc {
         padding-left: 10px;
         width: 150px;
     }
 
-    .footer{
+    .footer {
         font-size: 0.7rem;
     }
 
     .back-btn {
         right: 10%;
     }
-     label div{
+
+    label div {
         display: none;
-     }
+    }
 }

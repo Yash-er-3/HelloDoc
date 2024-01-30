@@ -1,9 +1,9 @@
 const modebtn = document.getElementById('img-btn')
 const imgbtn = document.getElementById('img-mode')
 const font = document.getElementById('font-color')
-
+const contentcolor = document.getElementById('content-color')
+const dateIcon = document.getElementById('date-icon')
 modebtn.addEventListener('click', darkLight)
-
 var flag;
 
 window.onload = function () {
@@ -30,6 +30,8 @@ function darkLight () {
         imgbtn.toString().replace('light', 'dark')
         imgbtn.src = "../images/dark.png"
         document.querySelector('body').style.color = "white"
+        contentcolor.style.backgroundColor = "rgb(33,37,41)"
+        dateIcon.classList.replace('date-iconLight','date-iconDark')
         document.cookie = "flag = " + flag;
         flag = 1;
     }
@@ -39,8 +41,21 @@ function darkLight () {
         imgbtn.toString().replace('dark', 'light')
         imgbtn.src = "../images/light.png"
         document.querySelector('body').style.color = "black" 
+        contentcolor.style.backgroundColor = "white"
+        dateIcon.classList.replace('date-iconDark', 'date-iconLight')
+
         // font.style.color = "white"
         document.cookie = "flag = " + flag
         flag = 0;
     }
 }
+
+// file upload js
+
+const actualBtn = document.getElementById('actual-btn');
+
+const fileChosen = document.getElementById('file-chosen');
+
+actualBtn.addEventListener('change', function () {
+    fileChosen.textContent = this.files[0].name
+})
